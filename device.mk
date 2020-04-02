@@ -537,7 +537,8 @@ PRODUCT_COPY_FILES += \
 
 # init scripts
 PRODUCT_PACKAGES += \
-    init.halium.rc
+    init.halium.rc \
+    init.disabled.rc
 
 PRODUCT_PACKAGES += \
     sensorservice
