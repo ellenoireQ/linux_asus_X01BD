@@ -529,6 +529,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/halium-overlay/lib/udev/rules.d/70-X01BD.rules:system/halium/lib/udev/rules.d/70-android.rules \
     $(LOCAL_PATH)/halium-overlay/etc/ubuntu-touch-session.d/android.conf:system/halium/etc/ubuntu-touch-session.d/android.conf
 
+# init scripts
+PRODUCT_PACKAGES += \
+    init.halium.rc
+
 PRODUCT_PACKAGES += \
     sensorservice
 
