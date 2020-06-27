@@ -533,8 +533,10 @@ PRODUCT_PACKAGES += \
 # Halium/UBports
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/halium-overlay/lib/udev/rules.d/70-X01BD.rules:system/halium/lib/udev/rules.d/70-android.rules \
-    $(LOCAL_PATH)/halium-overlay/etc/ubuntu-touch-session.d/android.conf:system/halium/etc/ubuntu-touch-session.d/android.conf
-    $(LOCAL_PATH)/halium-overlay/usr/share/repowerd/device-configs/config-default.xml:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/share/repowerd/device-configs/config-default.xml
+    $(LOCAL_PATH)/halium-overlay/etc/ubuntu-touch-session.d/android.conf:system/halium/etc/ubuntu-touch-session.d/android.conf \
+    $(LOCAL_PATH)/halium-overlay/usr/share/repowerd/device-configs/config-default.xml:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/share/repowerd/device-configs/config-default.xml \
+    $(LOCAL_PATH)/halium-overlay/etc/init/ssh.override:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/ssh.override \
+    $(LOCAL_PATH)/halium-overlay/etc/init/usb-tethering.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/usb-tethering.conf
 
 # init scripts
 PRODUCT_PACKAGES += \
