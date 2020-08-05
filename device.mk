@@ -489,4 +489,47 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
+#### Ubuntu Touch ####
+
+# Misc
+PRODUCT_PACKAGES += \
+    libandroid \
+    libandroid_runtime \
+    libdrm \
+    vendor.display.config@1.7 \
+    libion
+
+# Media
+PRODUCT_PACKAGES += \
+    libmedia_omx \
+    drmserver \
+    mediadrmserver \
+    mediaextractor
+
+# Hybris compat libs
+PRODUCT_PACKAGES += \
+    libmedia_compat_layer \
+    libsf_compat_layer \
+    libui_compat_layer
+
+# Droidmedia
+PRODUCT_PACKAGES += \
+    libdroidmedia \
+    minimediaservice \
+    minisfservice \
+    miniafservice
+
+# Ubuntu
+PRODUCT_PACKAGES += \
+    libbiometry_fp_api \
+    libubuntu_application_api
+
+# Halium/UBports
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/halium-overlay/lib/udev/rules.d/70-X01BD.rules:system/halium/lib/udev/rules.d/70-android.rules \
+    $(LOCAL_PATH)/halium-overlay/etc/ubuntu-touch-session.d/android.conf:system/halium/etc/ubuntu-touch-session.d/android.conf
+
+PRODUCT_PACKAGES += \
+    sensorservice
+
 $(call inherit-product, vendor/asus/X01BD/X01BD-vendor.mk)
