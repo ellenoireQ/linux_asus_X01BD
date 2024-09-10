@@ -142,7 +142,6 @@ vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/libtinycompress_vendor.so
 
 # Alarm
-framework/vendor.qti.hardware.alarm-V1.0-java.jar:vendor/framework/vendor.qti.hardware.alarm-V1.0-java.jar
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/power_off_alarm
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
@@ -573,9 +572,6 @@ vendor/bin/hvdcp_opti
 # CNE - from LA.UM.7.2.r1-06900-sdm660.0
 etc/permissions/cneapiclient.xml|15831adf0e80243042b90c734eea0a68eb8ae9c9
 etc/permissions/com.quicinc.cne.xml|e99e631d8b06ba4680529e9e4004d8d05baf6904
-framework/cneapiclient.jar|af7db889362e562a4c5073bb6aae32947218abf0
-framework/com.quicinc.cne.jar|56cb2e1ecb464f29c715a0a5e0a7393560ea1c8c
--priv-app/CNEService/CNEService.apk|c317748aca88d8acf9f611a0c11ac380c8ff622d
 vendor/bin/cnd|e9735132b87af909c892362a0be81fa9a5ac3c3a
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml|578f3f8f56059bfdbef926bcc68d01c15e06951f
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml|1fb42c672a12b6660bdce3ea94e0c43719dd9de8
@@ -640,15 +636,11 @@ etc/dpm/dpm.conf|fec89edb6cff81424a6c3a730fed92efa3613f72
 etc/init/dpmd.rc|52ca6ad920a1804e4ff608113cece063730f5e0c
 etc/permissions/com.qti.dpmframework.xml|36b94c9338069e434b83359a92cdc7ff62b822df
 etc/permissions/dpmapi.xml|ded29f9befaef20a7ccee0c75427fda1d1d04890
-framework/com.qti.dpmframework.jar|2a6ff555ebff148a508fc7ea2fbeaee4b9a2dff6
-framework/dpmapi.jar|89ddc5bf0c4c88a3f341169edc4d89f9e834337b
-framework/tcmclient.jar|91b415288494fa208b5f5ec9fafa33c47e569c96
 lib64/com.qualcomm.qti.dpm.api@1.0.so|cb0f37ef7e826bcd8b34be047b8dc045a6853e73
 lib64/libdpmctmgr.so|611642251e77a1ce8a4bc59beaf4213bfc0cef8a
 lib64/libdpmfdmgr.so|84a6916dff3b3608e9ac83106df651ba995ca704
 lib64/libdpmframework.so|060a7200afccf7411969af4943908c92d752c032
 lib64/libdpmtcm.so|db125f21d6f9da6afcb8956ba2eabae58cbeb30e
--priv-app/dpmserviceapp/dpmserviceapp.apk|8f153185721c3383f8f5858aee3b0bb73220526c
 vendor/bin/dpmQmiMgr|0808c5a2d7b51611b3f976beb9552aabda796a41
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|7738cc1fdf4ce250285ed8c4130735d6cd0c598e
 vendor/lib64/libdpmqmihal.so|5d4647ac2ad8d386a44f5e9c5486287b21a7f758
@@ -729,7 +721,6 @@ vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
 
 # Fingerprint
-vendor/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-x01bd
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-x01bd.rc
 vendor/etc/permissions/qti_fingerprint_interface.xml
@@ -850,8 +841,6 @@ etc/permissions/com.qti.location.sdk.xml|cb68a566bd77dcc75bb7547199d528289fac01c
 etc/permissions/com.qualcomm.location.xml|78b2c4d3f4d053f7d7b3e27a60a8d9e65ac583c3
 etc/permissions/izat.xt.srv.xml|a0f460056f27b5495a4d6e959eecf0e429c42a57
 etc/permissions/privapp-permissions-com.qualcomm.location.xml|055fb40299c0a2340bb1b2c9be218a4d2c0f8c72
-framework/com.qti.location.sdk.jar|7d42c9198429b5da1b4cb0b5f90aa23160b8e817
-framework/izat.xt.srv.jar|586824fa7ebbf204e6f5d0a515fb572b00facc4c
 lib64/liblocationservice_jni.so|a26d9900188520c0ea32d037a91b3951197397ce
 lib64/libxt_native.so|4f1063ec145b241d74b2178e2aadafa5c9b386b2
 lib64/vendor.qti.gnss@1.0.so|861e5275831265a90709294d019abc45116c15a4
@@ -859,7 +848,6 @@ lib64/vendor.qti.gnss@1.1.so|18402dc7743207e5c896088de25e1740ac4dc90d
 lib64/vendor.qti.gnss@1.2.so|e67548d5dbb3d7b9fd02007e3fb9392f5b824657
 lib64/vendor.qti.gnss@2.0.so|03f3ccbe561ae8b56a7ceecd67c3877eb4e6f622
 lib64/vendor.qti.gnss@2.1.so|a76e8d8700c8f55b805b64ad89835cdb83108d4e
--priv-app/com.qualcomm.location/com.qualcomm.location.apk|1667af1e78e8dbf4aea9cfc45e1aeb7e71dbe67d
 vendor/bin/hw/vendor.qti.gnss@2.0-service|7f92f169ef8fac413d517636bf9844c5abb6a044
 vendor/bin/loc_launcher|1705e75180e9bdf1ce7aa00bc9ce1d7c07e8fd74
 vendor/bin/lowi-server|fabc723b1a53809a8619061227f6bb9453a2e297
@@ -1073,18 +1061,9 @@ vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmiservices.so
 
 # RIL
--app/CallFeaturesSetting/CallFeaturesSetting.apk
--app/QtiTelephonyService/QtiTelephonyService.apk
--app/datastatusnotification/datastatusnotification.apk
--app/embms/embms.apk
--framework/qcrilhook.jar
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 etc/permissions/embms.xml
 etc/permissions/qcrilhook.xml
 etc/permissions/telephonyservice.xml
-framework/QtiTelephonyServicelibrary.jar
-framework/embmslibrary.jar
-framework/qti-telephony-common.jar|b1953a3599255f08f1785c677d22810f65e0167b
 lib64/librcc.so
 vendor/bin/ATFWD-daemon
 vendor/bin/diag_callback_sample
@@ -1181,17 +1160,9 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 vendor/radio/qcril_database/qcril.db
 
 # RIL (IMS)
--app/imssettings/imssettings.apk:vendor/app/imssettings/imssettings.apk
--app/uceShimService/uceShimService.apk
--priv-app/ims/ims.apk
 etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:vendor/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml
 etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:vendor/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml
 etc/permissions/com.qualcomm.qti.imscmservice.xml:vendor/etc/permissions/com.qualcomm.qti.imscmservice.xml
-framework/com.qualcomm.qti.imscmservice-V2.0-java.jar:vendor/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar
-framework/com.qualcomm.qti.imscmservice-V2.1-java.jar:vendor/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar
-framework/com.qualcomm.qti.uceservice-V2.0-java.jar
-framework/vendor.qti.ims.callinfo-V1.0-java.jar:vendor/framework/vendor.qti.ims.callinfo-V1.0-java.jar
-framework/vendor.qti.ims.rcsconfig-V1.0-java.jar:vendor/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar
 lib/com.qualcomm.qti.imscmservice@2.0.so
 lib/com.qualcomm.qti.imscmservice@2.1.so
 lib/lib-imscamera.so
@@ -1268,7 +1239,6 @@ vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0.so
 
 # Sensors
--framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar:vendor/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
 vendor/bin/sensors.qti
 vendor/etc/calmodule.cfg
 vendor/etc/sensors/sensor_def_qcomdev.conf
@@ -1302,7 +1272,6 @@ vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
 
 # Time services
--vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/lib64/libtime_genoff.so
 
@@ -1319,7 +1288,6 @@ bin/wfdservice|edeb291221024401cbae69c2fa4e58733b7efc4c
 etc/init/wfdservice.rc|311bfdd1675e56499662f39455536b75b78477bb
 etc/wfdconfig.xml|60a210d323f3f65dd1424cfd517295c522824b7b
 etc/wfdconfigsink.xml|134a86f74d9c374ce9081bff92c02515712a7f12
--framework/WfdCommon.jar|7b925c98d811b342e55549521af5c0a244e44025
 lib/com.qualcomm.qti.wifidisplayhal@1.0.so|53ea5a509b6de0dbc3848275dd9eff18a4f0b519
 lib/libmmrtpdecoder.so|adb55936e63ff087a9e3458070515e1ab7dbe178
 lib/libmmrtpencoder.so|9a85d450a8633207f7a499962c5821d1a3fec2b8
@@ -1342,7 +1310,6 @@ lib/libwfduibcsrc.so|78bc3258deb8f818c3392d5accdf8e7aac729fdc
 lib/libwfduibcsrcinterface.so|cb1ce08a89654236a29d940b6988309b670bf98d
 lib64/libwfdclient.so|89d4d2d1a452246664a4dc4ae783173be3180835
 lib64/libwfdnative.so|5a0c61e03e15a649d3ec9d319cc9005995e89c44
--priv-app/WfdService/WfdService.apk|192e164466db20e5bde60c7ced8580512380a9ed
 vendor/bin/wifidisplayhalservice|5176c5f2f12c38686b862f404ef8dbc6445dc18d
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc|04e463342cbba4c0e9c311a18238f95dec9359fd
 vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so|365822a07aec2deb6dcedaf43211218a11e5f80f

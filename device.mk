@@ -341,14 +341,14 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-service
 
 # Telephony
-PRODUCT_PACKAGES += \
-    qti-telephony-common \
-    ims-ext-common \
-    telephony-ext
+#PRODUCT_PACKAGES += \
+#    qti-telephony-common \
+#    ims-ext-common \
+#    telephony-ext
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext \
-    WfdCommon
+#PRODUCT_BOOT_JARS += \
+    #telephony-ext \
+    #WfdCommon
 
 # Seccomp
 PRODUCT_COPY_FILES += \
