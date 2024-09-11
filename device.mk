@@ -547,7 +547,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/halium-overlay/etc/ofono/main.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/ofono/main.conf \
     $(LOCAL_PATH)/halium-overlay/etc/ofono/ril_subscription.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/ofono/ril_subscription.conf \
     $(LOCAL_PATH)/halium-overlay/etc/apparmor.d/local/usr.bin.media-hub-server:system/halium/etc/apparmor.d/local/usr.bin.media-hub-server \
-    $(LOCAL_PATH)/halium-overlay/etc/init/device-hacks.conf:system/halium/etc/init/device-hacks.conf
+    $(LOCAL_PATH)/halium-overlay/etc/init/device-hacks.conf:system/halium/etc/init/device-hacks.conf \
+    $(LOCAL_PATH)/halium-overlay/etc/init/repowerd.override:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/repowerd.override \
 
 # init scripts
 PRODUCT_PACKAGES += \
