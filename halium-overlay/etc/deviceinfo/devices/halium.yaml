@@ -2,12 +2,18 @@ default:
   Vendor: Asus
   DeviceType: phone
 
-sargo:
-  PrettyName: Asus X01BD
+X01BD:
+  PrettyName: Asus Zenfone Max Pro M2
   GridUnit: 25
   SupportedOrientations:
     - Portrait
     - Landscape
     - InvertedLandscape
+  BacklightSysfsPath: 
+    - /sys/class/leds/lcd-backlight
+  FlashlightSysfsPath:
+    - /sys/class/leds/torch-light0/brightness
+  FlashlightSwitchPath:
+    - /sys/class/leds/led:switch_0/brightness
   DoubleTapToWake:
-    - /sys/devices/platform/soc/a84000.i2c/i2c-2/2-0020/input/input1/wake_gesture|1|0
+    - /proc/tpd_gesture|1|0
