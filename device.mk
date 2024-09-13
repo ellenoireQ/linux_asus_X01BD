@@ -58,18 +58,18 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml \
-    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
     frameworks/native/data/etc/android.hardware.vulkan.compute-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.compute-0.xml \
     frameworks/native/data/etc/android.hardware.vulkan.level-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level.xml \
-    frameworks/native/data/etc/android.hardware.vulkan.version-1_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version.xml
+    frameworks/native/data/etc/android.hardware.vulkan.version-1_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version.xml \
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml 
 
 # ANT+
-PRODUCT_PACKAGES += \
-    AntHalService \
-    com.dsi.ant.antradio_library
+#PRODUCT_PACKAGES += \
+#    AntHalService \
+#    com.dsi.ant.antradio_library
 
-PRODUCT_COPY_FILES += \
-    external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml
+#PRODUCT_COPY_FILES += \
+#    external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -135,12 +135,12 @@ PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0_32 \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
-    libxml2 \
-    Snap
+    libxml2 
+    #Snap
 
 # Configstore
-PRODUCT_PACKAGES += \
-    android.hardware.configstore@1.0-service
+#PRODUCT_PACKAGES += \
+    #android.hardware.configstore@1.0-service
 
 # Display
 PRODUCT_PACKAGES += \
@@ -187,7 +187,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service
+    fingerprintd
 
 # Excluded Input devices
 PRODUCT_COPY_FILES += \
@@ -225,8 +225,8 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.x01bd
 
 # LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
+# PRODUCT_PACKAGES += \
+  #  vendor.lineage.livedisplay@2.0-service-sdm
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -272,11 +272,6 @@ PRODUCT_PACKAGES += \
     NfcNci \
     SecureElement \
     Tag
-
-# NFC-Secure Element
-PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.0-service \
-    SecureElement
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -466,8 +461,8 @@ PRODUCT_PACKAGES += \
     libtinyxml2
 
 # Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
+#PRODUCT_PACKAGES += \
+    #vendor.lineage.trust@1.0-service
 
 # USB
 PRODUCT_PACKAGES += \
@@ -492,8 +487,8 @@ PRODUCT_PACKAGES += \
     libqsap_sdk \
     libQWiFiSoftApCfg \
     libwpa_client \
-    hostapd \
-    wpa_supplicant \
+#   hostapd \
+#   wpa_supplicant \
     wpa_supplicant.conf
 
 PRODUCT_COPY_FILES += \
@@ -503,6 +498,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
 #### Ubuntu Touch ####
+
+PRODUCT_PACKAGES += \
+    libmedia_omx \
+    android.frameworks.displayservice@1.0
 
 # Misc
 PRODUCT_PACKAGES += \
@@ -549,7 +548,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/halium-overlay/etc/apparmor.d/local/usr.bin.media-hub-server:system/halium/etc/apparmor.d/local/usr.bin.media-hub-server \
     $(LOCAL_PATH)/halium-overlay/etc/init/device-hacks.conf:system/halium/etc/init/device-hacks.conf \
     $(LOCAL_PATH)/halium-overlay/etc/init/repowerd.override:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/repowerd.override \
-    $(LOCAL_PATH)/halium-overlay/etc/deviceinfo/devices/halium.yaml:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/deviceinfo/devices/halium.yaml
+    $(LOCAL_PATH)/halium-overlay/etc/deviceinfo/devices/halium.yaml:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/deviceinfo/devices/halium.yaml 
+
 
 # init scripts
 PRODUCT_PACKAGES += \
