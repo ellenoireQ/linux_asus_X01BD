@@ -22,3 +22,13 @@ service vendor.audio-hal-2-0 android.hardware.audio@2.0-service_HYBRIS_DISABLED
     disabled
     oneshot
     override
+
+service vendor.livedisplay-hal-2-0-sdm vendor.lineage.livedisplay@2.0-service-sdm_HYBRIS_DISABLED
+    disabled
+    oneshot
+    override
+
+service vendor.trust-hal-1-0 vendor.lineage.trust@1.0-service_HYBRIS_DISABLED
+    disabled
+    oneshot
+    override
