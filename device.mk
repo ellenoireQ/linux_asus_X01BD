@@ -548,7 +548,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/halium-overlay/etc/apparmor.d/local/usr.bin.media-hub-server:system/halium/etc/apparmor.d/local/usr.bin.media-hub-server \
     $(LOCAL_PATH)/halium-overlay/etc/init/device-hacks.conf:system/halium/etc/init/device-hacks.conf \
     $(LOCAL_PATH)/halium-overlay/etc/init/repowerd.override:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/repowerd.override \
-    $(LOCAL_PATH)/halium-overlay/etc/deviceinfo/devices/halium.yaml:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/deviceinfo/devices/halium.yaml 
+    $(LOCAL_PATH)/halium-overlay/etc/deviceinfo/devices/halium.yaml:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/deviceinfo/devices/halium.yaml \
+    $(LOCAL_PATH)/halium-overlay/etc/init/biometryd.conf:system/halium/etc/init/biometryd.conf 
 
 
 # init scripts
