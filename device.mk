@@ -549,7 +549,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/halium-overlay/etc/init/device-hacks.conf:system/halium/etc/init/device-hacks.conf \
     $(LOCAL_PATH)/halium-overlay/etc/init/repowerd.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/repowerd.conf \
     $(LOCAL_PATH)/halium-overlay/etc/deviceinfo/devices/halium.yaml:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/deviceinfo/devices/halium.yaml \
-    $(LOCAL_PATH)/halium-overlay/etc/init/biometryd.conf:system/halium/etc/init/biometryd.conf 
+    $(LOCAL_PATH)/halium-overlay/etc/init/biometryd.conf:system/halium/etc/init/biometryd.conf \
+    $(LOCAL_PATH)/halium-overlay/etc/init/bluebinder.conf:system/halium/etc/init/bluebinder.conf 
 
 
 # init scripts
