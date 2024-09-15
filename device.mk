@@ -550,7 +550,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/halium-overlay/etc/init/repowerd.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/init/repowerd.conf \
     $(LOCAL_PATH)/halium-overlay/etc/deviceinfo/devices/halium.yaml:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/deviceinfo/devices/halium.yaml \
     $(LOCAL_PATH)/halium-overlay/etc/init/biometryd.conf:system/halium/etc/init/biometryd.conf \
-    $(LOCAL_PATH)/halium-overlay/etc/init/bluebinder.conf:system/halium/etc/init/bluebinder.conf 
+    $(LOCAL_PATH)/halium-overlay/etc/init/bluebinder.conf:system/halium/etc/init/bluebinder.conf \
+    $(LOCAL_PATH)/halium-overlay/etc/init/mtp-state.conf:system/halium/etc/init/mtp-state.conf \
+    $(LOCAL_PATH)/halium-overlay/usr/share/upstart/sessions/mtp-server.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/share/upstart/sessions/mtp-server.conf \
+    $(LOCAL_PATH)/halium-overlay/usr/share/usbinit/setupusb:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/share/usbinit/setupusb
+
 
 
 # init scripts
