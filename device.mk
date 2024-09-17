@@ -558,7 +558,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/halium-overlay/etc/init/post-android-mount.conf:system/halium/etc/init/post-android-mount.conf \
     $(LOCAL_PATH)/halium-overlay/usr/etc/init.qcom.usb.rc:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/etc/init.qcom.usb.rc \
     $(LOCAL_PATH)/halium-overlay/usr/bin/init.qcom.post_boot.sh:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/bin/init.qcom.post_boot.sh \
-    $(LOCAL_PATH)/halium-overlay/etc/init/mount-androi.conf:system/halium/etc/init/mount-android.conf \
+    $(LOCAL_PATH)/halium-overlay/etc/init/mount-android.conf:system/halium/etc/init/mount-android.conf \
+    $(LOCAL_PATH)/halium-overlay/etc/init/init.qcom.rc:system/halium/etc/init/init.qcom.rc
 
 
 
