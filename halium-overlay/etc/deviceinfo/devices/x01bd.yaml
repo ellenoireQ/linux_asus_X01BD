@@ -2,7 +2,7 @@ default:
   Vendor: Asus
   DeviceType: phone
 
-X01BD:
+x01bd:
   PrettyName: Asus Zenfone Max Pro M2
   GridUnit: 25
   SupportedOrientations:
